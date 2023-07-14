@@ -1,0 +1,449 @@
+/* ----- GLOBAL STYLING --------------------------- */
+* {
+    box-sizing: border-box;
+    
+}
+body{
+   font-family: 'Poppins', sans-serif;
+   background-color: rgb(251, 246, 240);
+}
+
+/* ------- FOUNDATIONAL STYLING ----------------------------------- */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: .2em;
+}
+
+.banner {
+    padding: 0 1em;
+    overflow: auto;
+}
+
+h2 {
+    padding: 5px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ------- NAV STYLING ------------------------------------------  */
+nav {
+    
+    overflow: auto;
+    width: 100%;
+  
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav li {
+    
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: .25em;
+
+}
+nav a {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.hire-me-btn:hover, .mail:hover {
+    color: rgb(108, 72, 72);;
+}
+
+.hire-me-btn:active, .mail:hover {
+    color: rgb(255, 140, 74);
+}
+
+.banner a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: .2em 0;
+    padding: .2em;
+}
+
+.banner ul {
+    padding: 0;
+}
+
+
+
+/* ------ HOME STYLING ----------------------------------------- */
+#home {
+display: flex;
+justify-content: space-between;
+margin: 10px 1.5px 70px;
+padding: 50px;
+background-repeat: no-repeat;
+background-size: 100%;
+border-radius: 2px;
+position: relative;
+
+}
+
+.home-info {
+    margin: 0;
+    padding: 2.5em;
+    
+}
+
+
+.profile-pic {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border-radius: 50%;
+    padding: 10px 0;
+
+}
+
+
+
+/* ------PORTFOLIO STYLING -------------------------------> */
+
+#portfolio {
+    display: flex;
+    background-color: rgb(218, 184, 162);
+}
+
+
+
+.slideshow {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(98, 68, 44);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  
+}
+
+
+/* ----ABOUT ME STYLING -----------------------------------> */
+
+#about-me {
+   width: 100%;
+}
+
+.img-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%;
+padding: 1em;
+
+}
+
+
+.about-me-img {
+    width: 100%;
+    display: block;
+    
+    
+}
+
+figure {
+    /* align-self: center; */
+    width: 100%;
+    
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* ----CONTACT STYLING -----------------------------------------> */
+#contact {
+    margin-top: 200px;
+
+}
+
+.contact-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.mail {
+    display: block;
+    text-align: center;
+    color: rgba(105, 55, 8, 0.889);
+    font-weight: bold;
+}
+
+
+
+/* -----FOOTER STYLING ----------------------------------------> */
+#footer {
+   margin-top: 10px;
+}
+
+.footer-container {
+   display: flex;
+    flex-direction: row; 
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    padding: 5% 2%;
+}
+
+h3 {
+    display: block;
+    font-weight: bold;
+    
+}
+
+
+
+.top {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+
+}
+
+.mn-tag {
+text-align: center;
+padding: 5px;
+margin: 0 auto;
+letter-spacing: .05em;
+}
+
+
+
+/* ------ BUTTON STYLING --------------------------------> */
+.hire-me-btn {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    background-color: rgb(97, 49, 49);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    width: 110px;
+    padding: 12px 2px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 550;
+    letter-spacing: .05em;
+     
+}
+
+
+button:hover {
+    background-color: rgb(181, 106, 39);
+}
+
+button:active {
+    background-color: rgb(255, 140, 74);
+}
+
+/* MEDIA QUERIES -----------------------------> */
+
+
+@media only screen and (min-width: 765px) {
+   
+    header {
+        margin: 0 auto;
+      }
+
+      .banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    
+      h1 {
+        text-align: center;
+        font-size: 2.5em;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        font-size: 4em;
+      }
+    
+      h2{
+        margin: auto;
+      }
+      
+       
+    nav {
+        display: block;
+        width: 100%;
+        margin: 1em;
+        text-align: center;
+        margin-top: .5em;
+    }
+
+    nav li {
+        font-size: 1em;
+        padding: .5em;
+        display: inline-block;
+    }
+
+  
+
+      .home p{
+        text-align: left;
+        padding-right: 15em;
+        padding-left: 1em;
+        font-size: 30px;
+        padding: 2em; 
+      }
+    
+      .profile-pic{
+        float: right;
+        width: 30%;
+        height: auto;
+      }
+       
+    
+        #portfolio {
+          margin-top: 0;
+        }
+      
+        .portfolio-wrapper div {
+          display: inline-block;
+          width: 30%;
+          padding: 1.4%;
+        }
+    
+    
+    .slideshow {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    }
+
+    #about-me h2 {
+        font-size: 2em;
+    }
+
+    .about-me-text {
+        font-size: 1.2em
+    }
+
+    .img-container {
+    flex-direction: row;
+    gap: 1em;
+
+    
+}
+
+figure {
+    max-width: 200px;
+    padding: 2px;
+    max-width: 200px;
+}
+
+figure img {
+    max-width: 200px
+}
+
+.footer-container {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+font-size: 1em;
+
+}
+
+h3 {
+    width: 100%;
+    text-align: left;
+
+}
+
+.top {
+width: 100%;
+display: inline-block;
+text-align: right;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .banner {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        white-space: nowrap;
+        overflow: visible;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        width: 100%;
+        text-align: left;
+        margin-right: 1em;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 100%;
+        text-align: right;
+        overflow: visible;
+    }
+
+    .profile-pic {
+        padding: 1em;
+    }
+
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 1px;
+    }
+
+    figure {
+        display: inline-block;
+        max-width: 200px;
+    }
+
+    .footer-container, .mn-tag {
+        font-size: 1.2em;
+    }
+
+}

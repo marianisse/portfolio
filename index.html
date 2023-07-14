@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link id="icon" rel="icon" href="images/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/617da72b83.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Marian's Portfolio</title>
+  </head>
+  <body>
+    <!--------Header------------------------------------------------->
+    <header id="home">
+      <div class="banner">
+      <h1>Marian Isse</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+</div>
+      <div class="home">
+        <img src="images/profile-pic.jpeg" alt="" class="profile-pic" />
+        <p>
+          Howdy! I'm a frontend web developer who loves building creative and
+          functional websites.
+        </p>
+        <button class="hire-me-btn"><a href="hire.html">Hire Me</a></button>
+      </div>
+    </header>
+    <main>
+      <!-------------Portfolio---------------------------------->
+      <section id="portfolio">
+        <div class="slideshow">
+          <div class="mySlides fade">
+            <a href="" target="">
+          </div>
+          <div class="mySlides fade"><a href="" target=""><img src="" alt=""></a><div class="slideshow-text"></div></div>
+          <div class="mySlides fade"><a href="" target=""><img src="" alt=""></a><div class="slideshow-text"></div></div>
+          <div class="mySlides fade"><a href="" target=""><img src="" alt=""></a><div class="slideshow-text"></div></div>
+          <div class="mySlides fade"><a href="" target=""><img src="" alt=""></a><div class="slideshow-text"></div></div>
+          <div class="mySlides fade"><a href="" target=""><img src="" alt=""></a><div class="slideshow-text"></div></div>
+          <div class="mySlides fade"><a href="" target=""><img src="" alt=""></a><div class="slideshow-text"></div></div>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        </div>
+      </section>
+
+      <!-----------About Me-->
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p class="about-me-text">
+          I have experience in healthcare and IT.  
+        </p>
+        <div class="img-container">
+          <figure>
+          <img
+            class="about-me-img"
+            src="images/caregiver.png"
+            alt="caregiver wheeling a resident"
+            width="100px"
+          />
+          <figcaption>I enjoyed taking out the residents</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="about-me-img"
+            src="images/support.png"
+            alt="tech support roles illustration"
+            width="100px"
+            />
+            <figcaption>I loved helping clients troubleshoot</figcaption>
+          </figure>
+          <figure>
+          <img
+            class="about-me-img"
+            src="images/garden.png"
+            alt="a beautiful garden"
+            width="100px"
+          />
+          <figcaption>Gardening is a therapeutic summer activity</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="about-me-img"
+            src="images/baking.png"
+            alt="baking supplies laid out" width="100px"
+          />
+          <figcaption>I am an avid baker with lots to share </figcaption>
+        </figure>
+          <figure> 
+          <img
+            class="about-me-img"
+            src="images/reading.png"
+            alt="woman reading a book" width="100px"
+          />
+          <figcaption>I love reading and delving into the lives of charaters</figcaption>
+        </figure>
+        <figure>
+          <img class="about-me-img" src="images/cat.png" alt="a cat posing" width="100px" />
+          <figcaption>I adore my cat Arayia and love taking her on walks. </figcaption>
+        </figure>
+        </div>
+      </section>
+    </main>
+    <!-------------Contact----------------------------------------->
+    <section id="contact">
+      <div class="contact-text">
+        <p>If you are interested, please reach out. I'd love to connect!</p>
+      
+      </div> 
+      <p>Mobile: (612)-800-2184</p>
+      <a href="mailto:marianisse24@gmail.com" class="mail">Send an Email</a>
+    </section>
+
+    <!--------------Footer------------------------------------------>
+    <footer>
+      <div class="footer-container">
+      <h3>Marian Isse</h3>
+        <a href="#home" class="top">Scroll to Top&uarr;</a>
+    </div class="footer-container">
+      <p class="mn-tag">Made with &#10084; in Minnesota</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
