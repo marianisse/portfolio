@@ -1,108 +1,223 @@
 body {
-    background-color: lightskyblue;
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    text-align: left;
-}
-
-.card {
-    background-color: hsla(0, 0%, 100%, 0.7);
-    padding: 2em;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    border-radius: 2em;
-}
-
-.search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-}
-
-button {
-    margin: .5em;
-    border-radius: 50%;
-    border: none;
-    height: 45px;
-    width: 45px;
-    outline: black;
-    cursor: pointer;
-    background-color: rgb(249, 249, 249);
-    transition: 0.2s ease-in-out;
-    padding: 5px;
-}
-button:hover, .search-input:hover {
-    background-color: rgb(254, 254, 220);
-}
-
-button:active {
-    background-color: rgb(213, 213, 211);
-}
-
-.search-input {
-    border: none;
-    outline: none;
-    padding: 0.5em 1em;
-    border-radius: 3em;
-    background: rgb(249, 249, 244);
-    font-family: inherit;
-    font-size: 120%;
-}
-
-.temp {
-    margin: 0;
-    padding: 1em;
-    font-size: 2em;
-}
-
-.city {
-    letter-spacing: .1em;
-    font-size: 1.8em;
-}
-
-h3 {
-    font-size: 1em;
-    letter-spacing: .1em;
-}
-
-.weather {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .2em;
-}
-
-.extra {
-    text-align: right;
-    padding: .2em;
-    margin-top: -1.7em;
-    font-size: .95em;
+  background-color: lightskyblue;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: left;
 }
 
 div {
-    padding-top: .2em
+  padding-top: 0.2em;
 }
 
-.reminder {
-    background-color: #fafaf9;
-    padding: 1em;
-    margin-top: 2em;
-    text-align: center;
-    border-radius: .5em;
+.card {
+  background-color: hsla(0, 0%, 100%, 0.5);
+  padding: 1em 2em;
+  max-width: 300px;
+  max-height: 700px;
+  margin: 0 auto;
+  border-radius: 2em;
+  
 }
+
+/* ------------- Search Button Styling ------------- */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 3em;
+  background: rgb(248, 248, 244);
+  font-family: inherit;
+  font-size: 120%;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 45px;
+  width: 45px;
+  outline: black;
+  cursor: pointer;
+  background-color: rgb(249, 249, 249);
+  transition: 0.2s ease-in-out;
+  padding: 5px;
+}
+button:hover,
+.search-input:hover {
+  background-color: rgb(254, 254, 220);
+}
+
+button:active {
+  background-color: rgb(213, 213, 211);
+}
+
+/* ------ Location Styling  ------------- */
+.location-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .2em;
+  width: 100%;
+}
+
+.city {
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  padding: 0.2em;
+  text-align: left;
+  margin-right: 1em;
+  float: right;
+  width: 50%;
+}
+
+.location-child {
+  text-align: right;
+  float: right;
+  padding: 0.5em;
+  margin-top: 2.5em;
+  font-size: 1em;
+  width: 50%;
+}
+
+.date {
+  margin: 1em, 0.5em;
+  white-space: nowrap;
+}
+
+.time {
+  padding: 0.2em 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* ---------------- Main Styling ----------- */
 
 .main {
-    display: flex;
-    justify-content: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.temp {
+  margin-right: 1em;
+  font-size: 2em;
+  text-align: left;
+  float: right;
+  white-space: nowrap;
 }
 
 .icon {
-    width: 100px;
-    display: block;
+  display: block;
+  width: 10em;
+  float: right;
+ 
 }
+
+/* ------- Detailed Section --------- */
+.weather {
+  padding: 0.5em;
+}
+
+
+/*------ MEDIA QUERIES ---------------------------*/
+
+@media only screen and (min-width: 765px) {
+  
+    .card {
+    max-width: 900px;
+    max-height: 800px;
+    padding-bottom: 2em;
+  }
+
+  .search-input {
+    width: 400px;
+    padding: 0.5em 1.2em;
+    margin-right: 0.5em;
+  }
+
+  .location-con {
+    padding: 2em;
+  }
+
+  .city {
+    font-size: 2.2em;
+  }
+
+  .location-child {
+    font-size: 1.1em;
+    margin-right: 4em;
+  }
+
+  .temp {
+    font-size: 2.5em
+  }
+
+  .icon {
+    width: 12em;
+  }
+
+  .weather {
+    font-size: 1.1em;
+    padding: .5em;
+    margin-bottom: 3em;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+ 
+  .card {
+    max-width: 1200px;
+    max-height: 1000px;
+    
+  }
+
+  .search-input {
+    width: 550px;
+  }
+
+  .city {
+    font-size: 2.5em;
+    float: left;
+  }
+
+  .location-child {
+    
+    font-size: 1.3em;
+    padding-left: 4em;
+  }
+
+  .main {
+    padding: .5em;
+  }
+
+  .temp {
+    font-size: 2.7em
+  }
+
+  .icon {
+    width: 14em;
+  }
+
+  .weather {
+    margin-bottom: 3em;
+  }
+
+}
+
+

@@ -11,26 +11,35 @@
       src="https://kit.fontawesome.com/617da72b83.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <h1 id="header">Today</h1>
-    <h3 class="date"></h3>
-    <input
-      type="text"
-      class="search-bar"
-      placeholder="what will you do?"
-      style="outline-color: #000000"
-    />
-    <button class="search-icon">
-      <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
-    </button>
+    <div class="container">
+      <h1 id="header">Today</h1>
+      <h3 class="date"></h3>
+      <form id="form">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="what will you do?"
+          style="outline-color: #000000"
+        />
+        <button class="submit-btn">
+          <i
+            class="fa-solid fa-plus"
+            style="color: #000000"
+            type="submit"
+            value="submit"
+          ></i>
+        </button>
+      </form>
 
-    <script src="app.js"></script>
+      <ul class="items"></ul>
+    
+    <button class="delete-btn" onclick="alert('Actions cannot be reversed, items have successfully been deleted.')">Delete List</button>
+</div>
+  
+    
+  <script src="app.js"></script> 
+
   </body>
 </html>

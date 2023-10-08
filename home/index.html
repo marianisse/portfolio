@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link id="icon" rel="icon" href="images/about-me-folder/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/617da72b83.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Marian's Portfolio</title>
+  </head>
+  <body>
+
+    <!-------- HEADER ------------------------------------------------->
+    <header id="home">
+      <div class="banner">
+      <h1>Marian Isse</h1>
+
+      <!-------- NAV BAR ------------------------------------------------->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+</div>
+
+<!-------- PROFILE AND INTRODUCTION ------------------------------------------------->
+      <div class="home">
+        <img src="images/about-me-folder/profile-pic.jpeg" alt="" class="profile-pic" />
+        <p>
+          Howdy! I'm a frontend web developer who enjoys building creative and
+          functional websites.
+        </p>
+        <button class="hire-me-btn"><a href="#footer">Hire Me</a></button>
+      </div>
+    </header>
+    <main>
+
+      <!------------- PORTFOLIO PROJECTS AND DESCRIPTIONS ---------------------------------->
+      <section id="portfolio">
+        
+        <button class="left-btn" onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></button>
+        <div class="slideshow">
+          <div class="mySlides"><figure class="slides-fig"><a href="/photogalleryapp/index.html" target="_blank"><img src="images/slides/gallery.jpg" alt="Screen grab of the photo gallery app." width="100px"></a><figcaption class="slides-figcap">Purely HTML and CSS to showcase responsiveness on devices.</figcaption></figure></div>
+          <div class="mySlides"><figure class="slides-fig"><a href="/memoryapp/index.html" target="_blank"><img src="images/slides/memory.png" alt="Screen grab of the memory game." width="100px"></a><figcaption class="slides-figcap">Utilizing Javascript to create a fun and interactive farm-themed game.</figcaption></figure></div>
+          <div class="mySlides"><figure class="slides-fig"><a href="/todoapp/index.html" target="_blank"><img src="images/slides/todoapp.png" alt="Screen grab of the to do app." width="100px"></a><figcaption class="slides-figcap">Simply HTML, CSS, Javascript and Local Storage to create a minimalist app.</figcaption></figure></div>
+          <div class="mySlides"><figure class="slides-fig"><a href="/weatherapp/index.html" target="_blank"><img src="images/slides/weather.jpg" alt="Screen grab of the weather app." width="100px"></a><figcaption class="slides-figcap">Javascript and Weather API to create a seamless site.</figcaption></figure></div>
+          <div class="mySlides"><figure class="slides-fig"><a href="/cakeapp/bakery/index.js" target="_blank"><img src="images/slides/cakeapp.png" alt="Screen grab of the weather app." width="100px"></a><figcaption class="slides-figcap">React with useState() to create a bakery website.</figcaption></figure></div>
+        </div>
+        <button class="right-btn" onclick="plusDivs(+1)"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+      
+    </section>
+
+      <!----------- ABOUT ME SECTION ------------------------------------------------->
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p class="about-me-text">
+          I have previous experience in healthcare as a Certified Nursing Assistant and IT as a software support analyst.  
+        </p>
+        <div class="img-container">
+          <figure class="about-me-fig" >
+          <img
+            class="about-me-img"
+            src="images/about-me-folder/caregiver.png"
+            alt="caregiver wheeling a resident"
+        
+          />
+          <figcaption class="about-me-figcap">I was a CNA for four years. It was a highlight to take residents out on nature walks.</figcaption>
+        </figure>
+        <figure class="about-me-fig" >
+          <img
+            class="about-me-img"
+            src="images/about-me-folder/support.png"
+            alt="tech support roles illustration"
+      
+            />
+            <figcaption class="about-me-figcap">I enjoy helping clients troubleshoot as a SSA. It's a pleasure to grow in tech!</figcaption>
+          </figure>
+          <figure class="about-me-fig" >
+          <img
+            class="about-me-img"
+            src="images/about-me-folder/garden.png"
+            alt="a beautiful garden"
+          
+          />
+          <figcaption class="about-me-figcap">Gardening is my favorite therapeutic summer activity.</figcaption>
+        </figure>
+        <figure class="about-me-fig" >
+          <img
+            class="about-me-img"
+            src="images/about-me-folder/baking.png"
+            alt="baking supplies laid out"
+          />
+          <figcaption class="about-me-figcap">I am an avid baker, excitedly creating new tasty treats to share. </figcaption>
+        </figure>
+          <figure class="about-me-fig" > 
+          <img
+            class="about-me-img"
+            src="images/about-me-folder/reading.png"
+            alt="woman reading a book" 
+          />
+          <figcaption class="about-me-figcap">I love reading and delving into the lives of fictional characters.</figcaption>
+        </figure>
+        <figure class="about-me-fig" >
+          <img class="about-me-img" src="images/about-me-folder/cat.png" alt="a cat posing" />
+          <figcaption class="about-me-figcap">I adore my furry friend, Arayia. She enjoys frolicking in nature. </figcaption>
+        </figure>
+        </div>
+      </section>
+    </main>
+
+    <!------------- CONTACT SECTION -------------------------------------------------->
+    <section id="contact">
+      <div class="contact-text">
+        <p class="cta">If you are interested, please reach out. <br> I'd love to connect!</p>
+      </div> 
+      <div class="socials">
+      <a href="Marian Isse's Resume.docx"><i class="fa-solid fa-file" style="color: #0c0d0d;"></i></a>
+      <a href="https://www.linkedin.com/in/marian-isse-88568097" target="_blank"><i class="fa-brands fa-linkedin" style="color: #000000; width="10px"></i></a> 
+      <a href="https://github.com/marianisse" target="_blank"><i class="fa-brands fa-github" style="color: #161718;"></i></a> 
+      <a href="mailto:marianisse24@gmail.com"><i class="fa-solid fa-envelope" style="color: #141414;"></i></a> 
+    </div>
+      <p class="mobile">Mobile: (612)-800-2184</p>
+    </section>
+
+    <!-------------- FOOTER SECTION --------------------------------------------------->
+    <footer id="footer">
+      <div class="footer-container">
+      <h3>Marian Isse</h3>
+        <a href="#home" class="top">Scroll to Top &uarr;</a>
+    </div class="footer-container">
+      <p class="mn-tag">Made with &#10084; in Minnesota</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

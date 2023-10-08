@@ -1,3 +1,4 @@
+/* ------ Pulling From The Weather API ---------- */
 let weather = {
   apiKey: "6158d444e5a774eb4130c89f37fba32f",
   fetchWeather: function (city) {
@@ -17,6 +18,8 @@ let weather = {
       })
       .then((data) => this.displayWeather(data));
   },
+
+  /* ------ Displaying The Weather API on HTML ---------- */
   displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
@@ -38,10 +41,12 @@ let weather = {
   },
 };
 
+/* ------ Button Event Listener ---------- */
 document.querySelector("button").addEventListener("click", function () {
   weather.search();
 });
 
+/* ------ Search Button Functionality ---------- */
 document
   .querySelector(".search-input")
   .addEventListener("keyup", function (event) {
@@ -50,17 +55,13 @@ document
     }
   });
 
+/* ------ Default Weather Display ---------- */
 weather.displayWeather;
 weather.fetchWeather("Minneapolis");
 
-// if (weather.displayWeather(data) >= 80) {
-//   console.log("hot");
-// } else {
-//   console.log("error");
-// }
-let day = new Date();
+let date = new Date();
 
-/* -------- Current Day and Display ------- */
+/* -------- Current Day, Month, Date ------- */
 const dateDisplay = document.querySelector(".date");
 let weekdayArr = [
   "Sunday",
@@ -71,7 +72,7 @@ let weekdayArr = [
   "Friday",
   "Saturday",
 ];
-let dayOf = weekdayArr[day.getDay()];
+let dayOf = weekdayArr[date.getDay()];
 let monthArr = [
   "January",
   "February",
@@ -86,20 +87,18 @@ let monthArr = [
   "November",
   "December",
 ];
-let month = monthArr[day.getMonth()];
-let dayNum = day.getDate();
+let month = monthArr[date.getMonth()];
+let dayNum = date.getDate();
 
+/* ------ Displaying Date on HTML ---------- */
 let currentDate = dayOf + ", " + month + " " + dayNum;
 dateDisplay.innerHTML = currentDate;
 
 /* ---------- Current Time and Display ------------- */
 const timeDisplay = document.querySelector(".time");
-const hourArr = [
-  12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
-  12,
-];
-let hour = day.getHours();
-let minute = day.getMinutes();
-let getAmPm = hourArr <= 12 ? "AM" : "PM";
-let getTime = hour + ":" + minute + " " + getAmPm;
-timeDisplay.innerHTML = getTime;
+let time = date.toLocaleTimeString("en-US", {
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: "true",
+});
+timeDisplay.innerHTML = time;
